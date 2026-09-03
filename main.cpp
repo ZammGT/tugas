@@ -15,5 +15,6 @@ int main()
     }
     else
     cout<<"Lu Sape Mpruy";
+    cout<<"Coba Lagi";
     return 0;
 }
