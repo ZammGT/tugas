@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main() {
+    string nama[3]={"udin","joko","mila"};
+    string password[3]={"123","456","789"};
+    string Nama,Pas;
+    int i;
+    cout<<"Masukkan Nama : ";
+    cin>>Nama;
+    cout<<"Masukkan Pasword : ";
+    cin>>Pas;
+    if(Nama=="udin" && Pas=="123"){
+            cout<<"Berhasil Login,Anda udin"<<endl;
+        }
+    else if(Nama=="joko" && Pas=="456"){
+            cout<<"Berhasil Login,Anda joko"<<endl;
+        }
+    else if(Nama=="mila" && Pas=="789"){
+            cout<<"Berhasil Login,Anda mila"<<endl;
+        }
+    else{
+        cout<<"Gagal Login";
+    }
+    
+    return 0;
+}
