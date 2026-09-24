@@ -1,15 +1,30 @@
 #include <iostream>
 using namespace std;
 int main() {
-    string nama[4]={"niken","Yanti","yudi","bued"};
-    int nilai[4]={90,90,85,75};
+    string nama[4];
+    int nilai1[4];
+    int nilai2[4];
     int i;
+    float r;
+    for(i=0;i<4;i++){
+        cout<<"Masukkan Nama : ";
+        cin>>nama[i];
+        cout<<"Masukkan Nilai 1 : ";
+        cin>>nilai1[i];
+        cout<<"Masukkan Nilai 2 : ";
+        cin>>nilai2[i];
+    }
     for(i=0;i<4;i++){
         cout<<"__________________________" <<endl;
         cout<<"Namanya " ;
         cout<<nama[i] <<endl;
         cout<<"Nilainya ";
-        cout<<nilai[i] <<endl;
+        cout<<nilai1[i];
+        cout<<" Dan ";
+        cout<<nilai2[i] <<endl;
+        cout<<"Rata-Ratanya Adalah : ";
+        r=(nilai1[i]+nilai2[i])/2.0;
+        cout<<r<<endl;
     }
     return 0;
 }
